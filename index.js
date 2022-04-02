@@ -6,16 +6,16 @@ function run() {
     input.addEventListener('keydown', (e) => {
         if (e.key == 'Tab') {
             e.preventDefault();
-            var start = this.selectionStart;
-            var end = this.selectionEnd;
+            var start = input.selectionStart;
+            var end = input.selectionEnd;
         
             // set textarea value to: text before caret + tab + text after caret
-            this.value = this.value.substring(0, start) +
-              "\t" + this.value.substring(end);
+            input.value = input.value.substring(0, start) +
+              "\t" + input.value.substring(end);
         
             // put caret at right position again
-            this.selectionStart =
-              this.selectionEnd = start + 1;
+            input.selectionStart =
+              input.selectionEnd = start + 1;
           }
     });
     const vm = new VMHolder();
