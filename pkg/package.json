@@ -1,0 +1,16 @@
+{
+  "name": "pestwasm",
+  "collaborators": [
+    "Exopteron <exopteron@protonmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "pestwasm_bg.wasm",
+    "pestwasm.js",
+    "pestwasm_bg.js",
+    "pestwasm.d.ts"
+  ],
+  "module": "pestwasm.js",
+  "types": "pestwasm.d.ts",
+  "sideEffects": false
+}
