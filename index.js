@@ -3,7 +3,7 @@ import { VMHolder } from "./pkg/pestwasm.js";
 function run() {
     const output = document.getElementById("terminal");
     const input = document.getElementById("input");
-    input.addEventListener('keydown', (event) => {
+    input.addEventListener('keydown', (e) => {
         if (e.key == 'Tab') {
             e.preventDefault();
             var start = this.selectionStart;
