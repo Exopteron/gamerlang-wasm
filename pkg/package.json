@@ -7,7 +7,6 @@
   "files": [
     "pestwasm_bg.wasm",
     "pestwasm.js",
-    "pestwasm_bg.js",
     "pestwasm.d.ts"
   ],
   "module": "pestwasm.js",
